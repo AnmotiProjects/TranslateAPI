@@ -1,7 +1,7 @@
 # TranslateAPI
 TranslateAPI package.
 ```js
-const translateAPI = require("translateapi");
+const translateAPI = require("@anmoti/translateapi");
 
 const gTlans = new translateAPI("google");
 
