@@ -1,7 +1,4 @@
-# TranslateAPI
-TranslateAPI package.
-```js
-const translateAPI = require("translateapi");
+const translateAPI = require("./index.js");
 
 const gTlans = new translateAPI("google");
 
@@ -14,4 +11,3 @@ async function main() {
 }
 
 main()
-```
