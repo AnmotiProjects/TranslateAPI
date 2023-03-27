@@ -1,6 +1,6 @@
 {
   "name": "@anmoti/translateapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TranslateAPI package.",
   "main": "src/index.js",
   "scripts": {
@@ -28,5 +28,8 @@
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "proxy-from-env": "^1.1.0"
-  }
+  },
+  "keywords": [
+    "Translate"
+  ]
 }
