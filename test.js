@@ -1,13 +1,15 @@
-const translateAPI = require("./index.js");
+const { TranslateAPI, SupportService } = require("./src/index.js");
 
-const gTlans = new translateAPI("google");
+(async function () {
+    const service = SupportService.Google;
+    const text = "こんにちは";
 
-async function main() {
-    const translated = await gTlans.translate("こんにちは", {
+
+    const gTrans = new TranslateAPI(service);
+    console.log(await gTrans.translate(text, { to: "en" }));
+
+    console.log(await TranslateAPI.TranslateRaw(text, service, {
         from: "auto",
-        to: "en"
-    });
-    console.log(translated.sentences[0].trans)
-}
-
-main()
+        to: "ru"
+    }))
+})();
