@@ -61,7 +61,7 @@ class TranslateAPI {
             });
             transformResponse = (response) => {
                 const { data } = response;
-
+                if (data[0] === null) throw new Error("Invaild request.");
                 return {
                     from: data[2],
                     to,
@@ -82,7 +82,6 @@ class TranslateAPI {
                 data.TranslateAPI = this;
                 return data;
             })
-            .catch(console.log);
     }
     /**
      * 翻訳関数
