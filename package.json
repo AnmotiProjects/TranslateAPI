@@ -1,6 +1,6 @@
 {
   "name": "@anmoti/translateapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TranslateAPI package.",
   "main": "src/index.js",
   "scripts": {
